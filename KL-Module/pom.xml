@@ -7,10 +7,10 @@
     <artifactId>nc-school-2017</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>'by.nc.school.dev'</groupId>
-  <artifactId>AP-Module</artifactId>
+  <groupId>by.nc.school.dev</groupId>
+  <artifactId>KL-Module</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>AP-Module</name>
+  <name>KL-Module</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
