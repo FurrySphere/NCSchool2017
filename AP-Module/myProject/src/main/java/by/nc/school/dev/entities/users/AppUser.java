@@ -1,15 +1,21 @@
 package main.java.by.nc.school.dev.entities.users;
 
+import main.java.by.nc.school.dev.exceptions.MyException;
+
+import java.awt.*;
+import java.io.Serializable;
+
 /**
  * Created by User on 15.10.2017.
  */
-public class AppUser {
+public class AppUser implements Serializable{
     private Long id;
     private String username;
     private String password;
     private String role;
 
-    public AppUser(Long id, String username, String password, String role) {
+    public AppUser(Long id, String username, String password, String role) throws MyException {
+        if(id < 0) throw new MyException("id < 0");
         this.id = id;
         this.username = username;
         this.password = password;
