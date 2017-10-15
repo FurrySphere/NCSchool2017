@@ -1,4 +1,4 @@
-package 'by.nc.school.dev';
+package by.nc.school.dev;
 
 /**
  * Hello world!
