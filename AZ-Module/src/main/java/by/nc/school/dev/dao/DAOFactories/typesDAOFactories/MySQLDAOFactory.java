@@ -1,9 +1,8 @@
 package by.nc.school.dev.dao.DAOFactories.typesDAOFactories;
 
 import by.nc.school.dev.dao.DAOFactories.DAOFactory;
-import by.nc.school.dev.dao.DAOFactories.MySQLDAO.*;
+import by.nc.school.dev.dao.DAOFactories.mySQLDAO.*;
 import by.nc.school.dev.dao.DAOInterfacesEntities.*;
-import by.nc.school.dev.dao.UserDAO;
 
 import java.sql.*;
 

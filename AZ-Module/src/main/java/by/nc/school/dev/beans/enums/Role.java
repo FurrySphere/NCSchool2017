@@ -7,7 +7,11 @@ package by.nc.school.dev.beans.enums;
 public enum Role {
     STUDENT, PROFESSOR;
 
-    public static Role getById(int id) {
+    Role() {
+
+    }
+
+    public Role getById(int id) {
         for (Role e : values()) {
             if (e.ordinal() == id) {
                 return e;

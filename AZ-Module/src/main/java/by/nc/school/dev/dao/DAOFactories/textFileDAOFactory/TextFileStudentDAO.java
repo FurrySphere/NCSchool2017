@@ -1,4 +1,4 @@
-package by.nc.school.dev.dao.DAOFactories.MySQLDAO;
+package by.nc.school.dev.dao.DAOFactories.textFileDAOFactory;
 
 import by.nc.school.dev.beans.Student;
 import by.nc.school.dev.beans.Subject;
@@ -6,7 +6,7 @@ import by.nc.school.dev.dao.DAOInterfacesEntities.StudentDAO;
 
 import java.util.List;
 
-public class MySQLStudentDAO implements StudentDAO {
+public class TextFileStudentDAO implements StudentDAO {
     public int addStudent() {
         return 0;
     }

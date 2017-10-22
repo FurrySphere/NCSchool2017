@@ -2,7 +2,6 @@ package by.nc.school.dev.dao.DAOFactories.typesDAOFactories;
 
 import by.nc.school.dev.dao.DAOFactories.DAOFactory;
 import by.nc.school.dev.dao.DAOInterfacesEntities.*;
-import by.nc.school.dev.dao.UserDAO;
 
 public class ConsoleDAOFactory extends DAOFactory {
     public UserDAO getUserDAO() {

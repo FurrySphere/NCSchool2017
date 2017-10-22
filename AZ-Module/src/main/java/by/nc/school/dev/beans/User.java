@@ -21,18 +21,18 @@ public class User implements Serializable {
     public User() {
     }
 
-    public User(long id, String username, String password, Role role) {
+    public User(long id, String username, String password, String roleName) {
         this.id = id;
         this.username = username;
         this.password = password;
-        this.role = role;
+        this.role = Role.valueOf(roleName);
     }
 
-    public User(long id, String password, Role role, String username, String surname, String name, String email,
+    public User(long id, String username, String password, String roleName,  String surname, String name, String email,
                 String telephoneNumber) {
         this.id = id;
         this.password = password;
-        this.role = role;
+        this.role = Role.valueOf(roleName);
         this.username = username;
         this.surname = surname;
         this.name = name;
@@ -67,8 +67,8 @@ public class User implements Serializable {
         return role;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setRole(String roleName) {
+        this.role = Role.valueOf(roleName);
     }
 
     public String getUsername() {
@@ -143,15 +143,9 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", password='" + password + '\'' +
-                ", role=" + role +
-                ", username='" + username + '\'' +
-                ", surname='" + surname + '\'' +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", telephoneNumber='" + telephoneNumber + '\'' +
-                '}';
+        StringBuilder builder = new StringBuilder();
+        builder.append(id).append(" ").append(username).append(" ").append(password).append(" ").append(role).append(" ");
+        builder.append(surname).append(" ").append(name).append(" ").append(email).append(" ").append(telephoneNumber);
+        return builder.toString();
     }
 }

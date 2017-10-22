@@ -2,66 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66af1d21-c065-45d4-91b7-7adcf7b6fa06" name="Default" comment="Change enum Role">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Statistics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLDepartmentDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLGroupDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLProfessorDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStatisticsDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStudentDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLSubjectDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLUserDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/ConsoleDAOFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLDAOFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/TextFileDAOFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/DepartmentDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/GroupDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/ProfessorDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/StatisticsDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/StudentDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/SubjectDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/UserDAO.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/abstarctFactory/AbstractActionFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/abstarctFactory/ActionFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/abstarctFactory/ActionInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/departmentActions/CreateAcademicStatisticsPerformance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/departmentActions/CreateAttendanceStatistics.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/departmentActions/ShowTableMarks.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/groupActions/AddGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/groupActions/EditGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/professorActions/AddProfessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/professorActions/EditProfessor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/professorActions/ShowProfessorProfile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/studentActions/AddStudent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/studentActions/EditStudent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/studentActions/GetCoefficientScholarship.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/studentActions/GetListLearningSubjects.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/studentActions/ShowStudentProfile.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/subjectActions/GetFinalMarkSubject.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/userActions/AddUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/userActions/DoLogin.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/userActions/DoesUserExist.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/DepartmentController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/GroupController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/LoginController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/ProfessorController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/StudentController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/SubjectController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/UserController.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/inputSerialize.data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/outputDeserialize.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/professors.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/students.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/users.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/ReadWriteFiles.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/Serializator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileProfessorDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileStudentDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileUserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/User.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/Role.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/Role.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/ConsoleDAOFactory.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/ConsoleDAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLDAOFactory.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLDAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/TextFileDAOFactory.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/TextFileDAOFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/exceptions/UserException.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/exceptions/UserException.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Course.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Course.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Department.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Department.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Faculty.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Faculty.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Group.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Group.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Professor.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Professor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Student.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Student.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Subject.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Subject.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/User.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/User.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/additionalClasses/Address.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/additionalClasses/Address.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/additionalClasses/Curriculum.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/additionalClasses/Curriculum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/additionalClasses/Task.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/additionalClasses/Task.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/enums/Role.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/Role.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/enums/TaskType.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/TaskType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/by/nc/school/dev/MainTest.java" afterPath="$PROJECT_DIR$/src/test/java/by/nc/school/dev/MainTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLDepartmentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLDepartmentDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLGroupDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLGroupDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLProfessorDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLProfessorDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStatisticsDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLStatisticsDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStudentDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLStudentDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLSubjectDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLSubjectDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLUserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLUserDAO.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,12 +42,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserException.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/exceptions/UserException.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="147">
+              <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Serializator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/Serializator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="method#serialization#0;class#Serializator#0" expanded="false" />
+                <element signature="method#deserialization#0;class#Serializator#0" expanded="false" />
+                <element signature="e#2045#2051#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadWriteFiles.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/ReadWriteFiles.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#412#418#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TextFileUserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileUserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="method#editUser#0;class#TextFileUserDAO#0" expanded="false" />
+                <element signature="method#doLogin#0;class#TextFileUserDAO#0" expanded="false" />
+                <element signature="e#1615#1616#0" expanded="true" />
+                <element signature="e#1643#1644#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,39 +118,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Department.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Course.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/ProfessorDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/StudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFavtory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/MySQLDAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/ConsoleFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/TextFileDAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/ConsoleFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLStudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLProfessorDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Statistics.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/Role.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/ConsoleDAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/TextFileDAOFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLStudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLDAOFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/ProfessorDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLProfessorDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/StudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStudentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/StatisticsDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStatisticsDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/UserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/SubjectDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLSubjectDAO.java" />
@@ -145,8 +138,6 @@
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/GroupDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/DepartmentDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLDepartmentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/exceptions/UserException.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Course.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Department.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Faculty.java" />
@@ -155,7 +146,29 @@
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Statistics.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/exceptions/UserException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/ConsoleDAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLDAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/by/nc/school/dev/MainTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/ReadFiles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/MySQLUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileStudentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/MySQLProfessorDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/textFileProfessorDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileProfessorDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/TextFileDAOFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileUserDAO.java" />
+        <option value="$PROJECT_DIR$/files/users.txt" />
+        <option value="$PROJECT_DIR$/files/inputSerialize.data" />
         <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/Serealizator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/ReadWriteFiles.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/Serializator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java" />
       </list>
     </option>
   </component>
@@ -172,11 +185,30 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1370" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>LossyEncoding</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -209,46 +241,6 @@
               <item name="AZ-Module" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AZ-Module" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AZ-Module" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AZ-Module" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AZ-Module" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AZ-Module" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AZ-Module" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AZ-Module" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AZ-Module" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AZ-Module" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AZ-Module" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dev" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="DAOFactories" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -264,11 +256,15 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="by.nc.school.dev.dao.DAOFactories.textFileDAOFactory" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\NCSchool2017\AZ-Module\files" />
+      <recent name="D:\NCSchool2017\AZ-Module" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="by.nc.school.dev" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\NCSchool2017\AZ-Module\src\main\java\by\nc\school\dev" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="by.nc.school.dev.dao.DAOFactories.typesDAOFactories" />
@@ -276,6 +272,10 @@
       <recent name="by.nc.school.dev.dao" />
       <recent name="by.nc.school.dev.controller.abstarctFactory" />
       <recent name="by.nc.school.dev.controller.actions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\NCSchool2017\AZ-Module\src\main\java\by\nc\school\dev\dao\DAOFactories\textFileDAOFactory" />
+      <recent name="D:\NCSchool2017\AZ-Module\src\main\java\by\nc\school\dev" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,7 +290,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="by.nc.school.dev.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="by.nc.school.dev.runner.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AZ-Module" />
+      <envs />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -371,6 +390,11 @@
       <properties />
       <listeners />
     </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -396,44 +420,44 @@
       <workItem from="1508516825485" duration="865000" />
       <workItem from="1508527995386" duration="5336000" />
       <workItem from="1508609650068" duration="1228000" />
-      <workItem from="1508693076664" duration="1183000" />
+      <workItem from="1508693076664" duration="18666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49747000" />
+    <option name="totallyTimeSpent" value="67230000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18910742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43585527" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -449,17 +473,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2806354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18910742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -486,31 +510,23 @@
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="15" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="fis.read()" language="JAVA" />
+        <watch expression="objectInputStream.available()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/groupActions/EditGroup.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/professorActions/AddProfessor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/professorActions/EditProfessor.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/additionalClasses/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/GroupController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/DepartmentController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/actions/userActions/DoLogin.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/entities/Human.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/UserController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/LoginController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/controllers/StudentController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/abstarctFactory/ActionInterface.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/services/abstarctFactory/ActionFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -536,52 +552,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/User.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/TextFileDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="51" lean-forward="false" selection-start-line="6" selection-start-column="51" selection-end-line="6" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStudentDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLStudentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/ConsoleDAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLProfessorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -592,7 +566,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStudentDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLStudentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="17" />
@@ -606,24 +580,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLStatisticsDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLStatisticsDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -641,14 +601,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLSubjectDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLSubjectDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLGroupDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLGroupDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="17" />
@@ -669,17 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/MySQLDAO/MySQLDepartmentDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLDepartmentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -746,18 +699,230 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/User.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/by/nc/school/dev/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/enums/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/professors.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/subjects.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/MySQLSubjectDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLProfessorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="e#246#247#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileStudentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileProfessorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/students.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/ConsoleDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOInterfacesEntities/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="62" lean-forward="false" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/TextFileDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#537#538#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/textFileDAOFactory/TextFileUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="method#editUser#0;class#TextFileUserDAO#0" expanded="false" />
+            <element signature="method#doLogin#0;class#TextFileUserDAO#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1643#1644#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/exceptions/UserException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="method#UserException#0;class#UserException#0" expanded="false" />
+            <element signature="method#UserException#2;class#UserException#0" expanded="false" />
+            <element signature="method#UserException#3;class#UserException#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/runner/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="34" column="38" lean-forward="false" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/outputDeserialize.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/inputSerialize.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/users.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="81" lean-forward="false" selection-start-line="3" selection-start-column="81" selection-end-line="3" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/Serializator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="method#serialization#0;class#Serializator#0" expanded="false" />
+            <element signature="method#deserialization#0;class#Serializator#0" expanded="false" />
+            <element signature="e#2045#2051#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/beans/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="method#User#1;class#User#0" expanded="false" />
+            <element signature="method#User#2;class#User#0" expanded="false" />
+            <element signature="method#User#3;class#User#0" expanded="false" />
+            <element signature="e#1342#1343#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+            <element signature="e#1847#1848#0" expanded="true" />
+            <element signature="e#1887#1888#0" expanded="true" />
+            <element signature="method#equals#0;class#User#0" expanded="false" />
+            <element signature="method#hashCode#0;class#User#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/mySQLDAO/MySQLUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/typesDAOFactories/MySQLDAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/dao/DAOFactories/DAOFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/by/nc/school/dev/ReadWriteFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#412#418#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,4 +1,4 @@
-package by.nc.school.dev.dao.DAOFactories.MySQLDAO;
+package by.nc.school.dev.dao.DAOFactories.mySQLDAO;
 
 import by.nc.school.dev.beans.Group;
 import by.nc.school.dev.dao.DAOInterfacesEntities.GroupDAO;

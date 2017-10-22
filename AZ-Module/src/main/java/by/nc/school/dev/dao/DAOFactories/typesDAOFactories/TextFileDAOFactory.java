@@ -1,20 +1,22 @@
 package by.nc.school.dev.dao.DAOFactories.typesDAOFactories;
 
 import by.nc.school.dev.dao.DAOFactories.DAOFactory;
+import by.nc.school.dev.dao.DAOFactories.textFileDAOFactory.TextFileProfessorDAO;
+import by.nc.school.dev.dao.DAOFactories.textFileDAOFactory.TextFileStudentDAO;
+import by.nc.school.dev.dao.DAOFactories.textFileDAOFactory.TextFileUserDAO;
 import by.nc.school.dev.dao.DAOInterfacesEntities.*;
-import by.nc.school.dev.dao.UserDAO;
 
 public class TextFileDAOFactory extends DAOFactory {
     public UserDAO getUserDAO() {
-        return null;
+        return new TextFileUserDAO();
     }
 
     public StudentDAO getStudentDAO() {
-        return null;
+        return new TextFileStudentDAO();
     }
 
     public ProfessorDAO getProfessorDAO() {
-        return null;
+        return new TextFileProfessorDAO();
     }
 
     public SubjectDAO getSubjectDAO() {

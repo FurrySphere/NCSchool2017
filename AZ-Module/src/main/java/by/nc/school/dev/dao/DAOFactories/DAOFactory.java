@@ -11,8 +11,6 @@ public abstract class DAOFactory {
     private static final int CONSOLE = 2;
     private static final int TEXT_FILE = 3;
 
-    // Здесь будет метод для каждого DAO, который может быть создан. Реализовывать эти методы должны
-    // конкретные генераторы.
     public abstract UserDAO getUserDAO();
     public abstract StudentDAO getStudentDAO();
     public abstract ProfessorDAO getProfessorDAO();
