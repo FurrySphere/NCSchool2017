@@ -8,4 +8,5 @@ public interface UserService {
     void addUser(User user);
     boolean login(String userName, String password);
     void geleteUser(String userName);
+    void update(User user);
 }

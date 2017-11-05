@@ -4,8 +4,14 @@ import by.nc.school.dev.dao.UserDAO;
 import by.nc.school.dev.dao.implication.UserDAOImpl;
 
 public class UserDAOFactory {
-    public static UserDAOImpl getInstance()
+
+    public static UserDAO userDaoInstance;
+
+    public static UserDAO getInstance()
     {
-        return new UserDAOImpl();
+        if (userDaoInstance == null) {
+            userDaoInstance = new UserDAOImpl();
+        }
+        return userDaoInstance;
     }
 }

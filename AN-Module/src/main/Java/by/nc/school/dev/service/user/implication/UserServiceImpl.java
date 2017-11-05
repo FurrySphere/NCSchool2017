@@ -2,7 +2,6 @@ package by.nc.school.dev.service.user.implication;
 
 import by.nc.school.dev.dao.UserDAO;
 import by.nc.school.dev.dao.factories.UserDAOFactory;
-import by.nc.school.dev.dao.implication.UserDAOImpl;
 import by.nc.school.dev.model.user.User;
 import by.nc.school.dev.service.user.UserService;
 
@@ -29,5 +28,13 @@ public class UserServiceImpl implements UserService {
     public void geleteUser(String userName) {
         userDAO = UserDAOFactory.getInstance();
         userDAO.delete(userName);
+    }
+
+    public void getByUserName(String userName){
+        userDAO = UserDAOFactory.getInstance();
+    }
+
+    public void update(User user) {
+
     }
 }

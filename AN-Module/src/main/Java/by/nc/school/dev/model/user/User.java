@@ -1,41 +1,38 @@
 package by.nc.school.dev.model.user;
 
 import java.io.Serializable;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 public class User implements Serializable {
 
-    private int id;
-
+    private Long id;
     private String username;
-
     private String password;
-
+    private String confirmPassword;
     private String firstName;
-
     private String lastName;
-
     private String email;
+    private Set<Role> roles = new HashSet<Role>();
 
-    private Role role;
-
-    public User(String username, String password, Role role) {
-        this.username = username;
-        this.password = password;
-        this.role = role;
+    public User() {
     }
 
-    public User(String username, String password) {
+    public User(final String username) {
         this.username = username;
-        this.password = password;
-        this.role = Role.USER;
     }
 
-    public int getId() {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -53,6 +50,14 @@ public class User implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 
     public String getFirstName() {
@@ -79,11 +84,15 @@ public class User implements Serializable {
         this.email = email;
     }
 
-    public Role getRole() {
-        return role;
+    public Set<Role> getRoles() {
+        return roles;
     }
 
-    public void setRole(Role role) {
-        this.role = role;
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
+    public void addRole(Role role) {
+        getRoles().add(role);
     }
 }
