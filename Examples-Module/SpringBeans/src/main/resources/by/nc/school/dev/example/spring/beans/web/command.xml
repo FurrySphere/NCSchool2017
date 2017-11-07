@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:map id="commands" key-type="java.lang.String" value-type="by.nc.school.dev.example.spring.beans.web.command.Command">
+        <entry value-ref="loginCommand">
+            <key><util:constant static-field="by.nc.school.dev.example.spring.beans.web.command.CommandNames.LOGIN" /></key>
+        </entry>
+        <entry value-ref="newUserCommand">
+            <key><util:constant static-field="by.nc.school.dev.example.spring.beans.web.command.CommandNames.NEW_USER" /></key>
+        </entry>
+    </util:map>
+
+    <bean id="commandFactory" class="by.nc.school.dev.example.spring.beans.web.command.CommandFactory">
+        <property name="commands" ref="commands" />
+    </bean>
+
+    <bean id="loginCommand" class="by.nc.school.dev.example.spring.beans.web.command.LoginCommand">
+        <property name="userService" ref="userService" />
+    </bean>
+
+    <bean id="newUserCommand" class="by.nc.school.dev.example.spring.beans.web.command.NewUserCommand">
+        <property name="userDAO" ref="userDAO" />
+    </bean>
+
+</beans>
