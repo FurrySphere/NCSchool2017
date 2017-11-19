@@ -1,13 +1,16 @@
 package by.nc.school.dev.dao.DAOInterfacesEntities;
 
 import by.nc.school.dev.beans.User;
+import by.nc.school.dev.exceptions.UserException;
 
 import java.util.List;
 
 public interface UserDAO {
-    public User addUser(String[] userArray);
+    public boolean addUser(User user) throws UserException;
     //public boolean deleteUser();
-    public boolean findUser(User user, List<User> usersList);
-    public List<User> editUser(User editingUser, User oldUser, List<User> usersList);
+    public List<User> getListUsers() throws UserException;
+    public User getUserById(int id) throws UserException;
+    public User findUserByUsername(String username) throws UserException;
+    public void updateUser(User user) throws UserException;
     public boolean doLogin(User user);
 }

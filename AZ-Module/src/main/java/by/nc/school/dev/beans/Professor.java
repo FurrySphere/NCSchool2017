@@ -9,23 +9,20 @@ import java.util.List;
  */
 public class Professor extends User implements Serializable {
     private List<Subject> listSubjectsProfessorTeach;
-    private long salary;
     private String scienceDegree;
 
     public Professor() {
     }
 
-    public Professor(List<Subject> listSubjectsProfessorTeach, long salary, String scienceDegree) {
+    public Professor(List<Subject> listSubjectsProfessorTeach, String scienceDegree) {
         this.listSubjectsProfessorTeach = new ArrayList<Subject>(listSubjectsProfessorTeach);
-        this.salary = salary;
         this.scienceDegree = scienceDegree;
     }
 
     public Professor(String surname, String name, String email, String telephoneNumber,
-                     List<Subject> listSubjectsProfessorTeach, long salary, String scienceDegree) {
+                     List<Subject> listSubjectsProfessorTeach, String scienceDegree) {
         super(surname, name, email, telephoneNumber);
         this.listSubjectsProfessorTeach = new ArrayList<Subject>(listSubjectsProfessorTeach);
-        this.salary = salary;
         this.scienceDegree = scienceDegree;
     }
 
@@ -35,14 +32,6 @@ public class Professor extends User implements Serializable {
 
     public void setListSubjectsProfessorTeach(List<Subject> listSubjectsProfessorTeach) {
         this.listSubjectsProfessorTeach = new ArrayList<Subject>(listSubjectsProfessorTeach);
-    }
-
-    public long getSalary() {
-        return salary;
-    }
-
-    public void setSalary(long salary) {
-        this.salary = salary;
     }
 
     public String getScienceDegree() {
@@ -61,7 +50,6 @@ public class Professor extends User implements Serializable {
 
         Professor professor = (Professor) o;
 
-        if (getSalary() != professor.getSalary()) return false;
         if (!getListSubjectsProfessorTeach().equals(professor.getListSubjectsProfessorTeach())) return false;
         return getScienceDegree().equals(professor.getScienceDegree());
     }
@@ -70,7 +58,6 @@ public class Professor extends User implements Serializable {
     public int hashCode() {
         int result = super.hashCode();
         result = 31 * result + getListSubjectsProfessorTeach().hashCode();
-        result = 31 * result + (int) (getSalary() ^ (getSalary() >>> 32));
         result = 31 * result + getScienceDegree().hashCode();
         return result;
     }
@@ -83,7 +70,6 @@ public class Professor extends User implements Serializable {
         }
         return "Professor{" +
                 "listSubjectsProfessorTeach: " + builder.toString() + "\n" +
-                "salary = " + salary + "\n" +
                 "scienceDegree = " + scienceDegree + "\n" +
                 '}';
     }

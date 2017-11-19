@@ -10,9 +10,9 @@ import java.io.Serializable;
  */
 public class User implements Serializable {
     private long id;
+    private String username;
     private String password;
     private Role role;
-    private String username;
     private String surname;
     private String name;
     private String email;
@@ -28,12 +28,22 @@ public class User implements Serializable {
         this.role = Role.valueOf(roleName);
     }
 
-    public User(long id, String username, String password, String roleName,  String surname, String name, String email,
+    public User(long id, String username, String password, Role role,  String surname, String name, String email,
                 String telephoneNumber) {
         this.id = id;
         this.password = password;
-        this.role = Role.valueOf(roleName);
+        this.role = role;
         this.username = username;
+        this.surname = surname;
+        this.name = name;
+        this.email = email;
+        this.telephoneNumber = telephoneNumber;
+    }
+
+    public User(String username, String password, Role role, String surname, String name, String email, String telephoneNumber) {
+        this.username = username;
+        this.password = password;
+        this.role = role;
         this.surname = surname;
         this.name = name;
         this.email = email;
@@ -67,8 +77,8 @@ public class User implements Serializable {
         return role;
     }
 
-    public void setRole(String roleName) {
-        this.role = Role.valueOf(roleName);
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     public String getUsername() {

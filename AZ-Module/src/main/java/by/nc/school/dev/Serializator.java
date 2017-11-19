@@ -57,7 +57,7 @@ public class Serializator {
                 user.setId(objectInputStream.readLong());
                 user.setUsername(objectInputStream.readUTF());
                 user.setPassword(objectInputStream.readUTF());
-                user.setRole(objectInputStream.readUTF());
+                //user.setRole(objectInputStream.readUTF());
                 user.setSurname(objectInputStream.readUTF());
                 user.setName(objectInputStream.readUTF());
                 user.setEmail(objectInputStream.readUTF());
