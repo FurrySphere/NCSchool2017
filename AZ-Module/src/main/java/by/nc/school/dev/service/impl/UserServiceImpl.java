@@ -1,15 +1,17 @@
 package by.nc.school.dev.service.impl;
 
 import by.nc.school.dev.beans.User;
-import by.nc.school.dev.dao.DAOFactories.mySQLDAO.MySQLUserDAO;
 import by.nc.school.dev.dao.DAOInterfacesEntities.UserDAO;
 import by.nc.school.dev.exceptions.UserException;
 import by.nc.school.dev.service.interfaces.UserService;
+import org.springframework.beans.factory.annotation.Required;
+
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
     private UserDAO userDAO;
 
+    @Required
     public void setUserDAO(UserDAO userDAO) {
         this.userDAO = userDAO;
     }
@@ -37,4 +39,6 @@ public class UserServiceImpl implements UserService {
     public boolean doLogin(User user) {
         return userDAO.doLogin(user);
     }
+
+
 }

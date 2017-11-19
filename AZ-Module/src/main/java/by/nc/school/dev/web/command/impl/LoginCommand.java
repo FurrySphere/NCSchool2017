@@ -1,21 +1,18 @@
 package by.nc.school.dev.web.command.impl;
 
-import by.nc.school.dev.beans.Student;
-import by.nc.school.dev.beans.User;
-import by.nc.school.dev.beans.enums.Role;
 import by.nc.school.dev.exceptions.UserException;
-import by.nc.school.dev.service.DataValidator;
-import by.nc.school.dev.service.ServiceFactory;
+import by.nc.school.dev.service.impl.ProfessorServiceImpl;
+import by.nc.school.dev.service.impl.StudentServiceImpl;
+import by.nc.school.dev.service.impl.UserServiceImpl;
 import by.nc.school.dev.service.interfaces.ProfessorService;
 import by.nc.school.dev.service.interfaces.StudentService;
 import by.nc.school.dev.service.interfaces.UserService;
 import by.nc.school.dev.web.command.Command;
 import by.nc.school.dev.web.command.util.PageConst;
-import by.nc.school.dev.web.command.util.ParamConst;
+import org.springframework.beans.factory.annotation.Required;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.List;
 
 public class LoginCommand implements Command {
     private UserService userService;
@@ -23,10 +20,9 @@ public class LoginCommand implements Command {
     private ProfessorService professorService;
 
     private LoginCommand() {
-        ServiceFactory serviceFactory = new ServiceFactory();
-        userService = serviceFactory.getUserServiceInstance();
-        studentService = serviceFactory.getStudentServiceInstance();
-        professorService = serviceFactory.getProfessorServiceInstance();
+        userService = new UserServiceImpl();
+        studentService = new StudentServiceImpl();
+        professorService = new ProfessorServiceImpl();
     }
 
     private static class LoginCommandHolder {
@@ -84,5 +80,10 @@ public class LoginCommand implements Command {
         }*/
         //return page;
         return PageConst.WELCOME_ADMIN_PAGE;
+    }
+
+    @Required
+    public void setUserService(UserService userService) {
+        this.userService = userService;
     }
 }

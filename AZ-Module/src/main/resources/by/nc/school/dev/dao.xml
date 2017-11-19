@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="userDAO" class="by.nc.school.dev.dao.mySqlDAOImpl.UserDAOImpl">
+        <property name="mySQLConnector" ref="mySQLConnector"/>
+        <util:constant static-field="ALL_USERS"/>
+        <util:constant static-field="ADD_USER"/>
+        <util:constant static-field="USER_BY_ID"/>
+        <util:constant static-field="UPDATE_USER"/>
+        <util:constant static-field="FIND_USER_BY_USERNAME"/>
+    </bean>
+
+    <bean id="studentDAO" class="by.nc.school.dev.dao.mySqlDAOImpl.StudentDAOImpl">
+        <property name="mySQLConnector" ref="mySQLConnector"/>
+    </bean>
+
+    <bean id="professorDAO" class="by.nc.school.dev.dao.mySqlDAOImpl.ProfessorDAOImpl">
+        <property name="mySQLConnector" ref="mySQLConnector"/>
+    </bean>
+
+    <bean id="subjectDAO" class="by.nc.school.dev.dao.mySqlDAOImpl.SubjectDAOImpl">
+        <property name="mySQLConnector" ref="mySQLConnector"/>
+    </bean>
+
+    <bean id="statisticsDAO" class="by.nc.school.dev.dao.mySqlDAOImpl.StatisticsDAOImpl">
+        <property name="mySQLConnector" ref="mySQLConnector"/>
+    </bean>
+
+    <bean id="groupDAO" class="by.nc.school.dev.dao.mySqlDAOImpl.GroupDAOImpl">
+        <property name="mySQLConnector" ref="mySQLConnector"/>
+    </bean>
+
+    <bean id="departmentDAO" class="by.nc.school.dev.dao.mySqlDAOImpl.DepartmentDAOImpl">
+        <property name="mySQLConnector" ref="mySQLConnector"/>
+    </bean>
+</beans>

@@ -1,7 +1,6 @@
 package by.nc.school.dev.service.interfaces;
 
 import by.nc.school.dev.beans.User;
-import by.nc.school.dev.dao.DAOFactories.mySQLDAO.MySQLUserDAO;
 import by.nc.school.dev.exceptions.UserException;
 
 import java.util.List;

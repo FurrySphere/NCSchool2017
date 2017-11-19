@@ -2,17 +2,20 @@ package by.nc.school.dev.web.command.impl;
 
 import by.nc.school.dev.beans.User;
 import by.nc.school.dev.beans.enums.Role;
+import by.nc.school.dev.dao.DAOInterfacesEntities.UserDAO;
 import by.nc.school.dev.exceptions.UserException;
-import by.nc.school.dev.service.ServiceFactory;
-import by.nc.school.dev.web.command.Command;
 import by.nc.school.dev.service.DataValidator;
+import by.nc.school.dev.web.command.Command;
 import by.nc.school.dev.web.command.util.DataChecker;
 import by.nc.school.dev.web.command.util.PageConst;
 import by.nc.school.dev.web.command.util.ParamConst;
+import org.springframework.beans.factory.annotation.Required;
+
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 
 public class RegisterCommand implements Command {
+    protected UserDAO userDAO;
+
     private RegisterCommand() {
     }
 
@@ -35,7 +38,6 @@ public class RegisterCommand implements Command {
         String email = request.getParameter(ParamConst.USER_EMAIL);
         String telephoneNumber = request.getParameter(ParamConst.USER_TELEPHONE_NUMBER);
 
-
         if (login == null || name == null || surname == null || email == null
                 || telephoneNumber == null) {
             request.setAttribute("emptyFields", true);
@@ -55,20 +57,26 @@ public class RegisterCommand implements Command {
         }
         User user = new User(login, password, role, surname, name, email, telephoneNumber);
         user.toString();
-        if (new ServiceFactory().getUserServiceInstance().addUser(user)) {
+        if (userDAO.addUser(user)) {
             request.setAttribute("successAdd", true);
         } else {
             request.setAttribute("successAdd", false);
         }
-        request.setAttribute(ParamConst.USER_ID, user.getId());
-        request.setAttribute(ParamConst.USER_LOGIN, user.getUsername());
-        request.setAttribute(ParamConst.USER_PASSWORD, user.getPassword());
-        request.setAttribute(ParamConst.USER_ROLE, user.getRole().toString().toUpperCase());
-        request.setAttribute(ParamConst.USER_SURNAME, user.getSurname());
-        request.setAttribute(ParamConst.USER_NAME, user.getName());
-        request.setAttribute(ParamConst.USER_EMAIL, user.getEmail());
-        request.setAttribute(ParamConst.USER_TELEPHONE_NUMBER, user.getTelephoneNumber());
+        //userDAO.addUser(new User(login, password, role, surname, name, email, telephoneNumber));
+        //request.setAttribute(ParamConst.USER_ID, user.getId());
+        //request.setAttribute(ParamConst.USER_LOGIN, user.getUsername());
+        //request.setAttribute(ParamConst.USER_PASSWORD, user.getPassword());
+        //request.setAttribute(ParamConst.USER_ROLE, user.getRole().toString().toUpperCase());
+        //request.setAttribute(ParamConst.USER_SURNAME, user.getSurname());
+        //request.setAttribute(ParamConst.USER_NAME, user.getName());
+        //request.setAttribute(ParamConst.USER_EMAIL, user.getEmail());
+        //request.setAttribute(ParamConst.USER_TELEPHONE_NUMBER, user.getTelephoneNumber());
 
         return page;
+    }
+
+    @Required
+    public void setUserDAO(UserDAO userDAO) {
+        this.userDAO = userDAO;
     }
 }

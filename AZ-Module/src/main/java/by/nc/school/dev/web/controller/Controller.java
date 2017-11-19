@@ -13,6 +13,8 @@ import java.io.IOException;
 
 @WebServlet("/controller")
 public class Controller extends HttpServlet {
+    protected static CommandFactory commandFactory;
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         processRequest(request, response);
@@ -25,12 +27,16 @@ public class Controller extends HttpServlet {
 
     private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
-            Command command = CommandFactory.getInstance().defineCommand(request);
+            Command command = commandFactory.getInstance().defineCommand(request);
             String page = command.execute(request);
             response.sendRedirect(page);
         } catch (UserException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void setCommandFactory(CommandFactory commandFactory) {
+        Controller.commandFactory = commandFactory;
     }
 }
 

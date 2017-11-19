@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="commandType" class="by.nc.school.dev.web.command.CommandType">
+        <util:constant static-field="LOGIN"/>
+        <util:constant static-field="LOGOUT"/>
+        <util:constant static-field="REGISTER"/>
+        <util:constant static-field="NULL"/>
+        <util:constant static-field="USERS"/>
+    </bean>
+
+    <bean id="commandFactory" class="by.nc.school.dev.web.command.factory.CommandFactory">
+        <property name="instanceCreated" ref="instanceCreated" />
+        <property name="instance" ref="instance" />
+        <property name="lock" ref="lock" />
+    </bean>
+
+    <bean id="loginCommand" class="by.nc.school.dev.web.command.impl.LoginCommand">
+        <property name="userService" ref="userService" />
+    </bean>
+
+    <bean id="logoutCommand" class="by.nc.school.dev.web.command.impl.LogoutCommand"/>
+
+    <bean id="registerCommand" class="by.nc.school.dev.web.command.impl.RegisterCommand">
+        <property name="userDAO" ref="userDAO" />
+    </bean>
+
+    <bean id="nullCommand" class="by.nc.school.dev.web.command.impl.NullCommand"/>
+
+    <bean id="showUserListCommand" class="by.nc.school.dev.web.command.impl.ShowUserListCommand">
+        <property name="userDAO" ref="userDAO" />
+    </bean>
+
+</beans>
