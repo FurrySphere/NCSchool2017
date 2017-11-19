@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="appConfigService" class="by.nc.school.dev.example.spring.beans.service.AppConfigServiceImpl" />
+
+    <bean id="appStringsService" class="by.nc.school.dev.example.spring.beans.service.AppStringsServiceImpl" />
+
+    <bean id="userService" class="by.nc.school.dev.example.spring.beans.service.UserServiceImpl">
+        <property name="userDAO" ref="userDAO" />
+    </bean>
+
+</beans>

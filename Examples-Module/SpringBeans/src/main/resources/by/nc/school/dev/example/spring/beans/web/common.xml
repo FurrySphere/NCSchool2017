@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" >
+
+    <import resource="command.xml" />
+    <import resource="model.xml" />
+
+    <bean class="org.springframework.beans.factory.config.MethodInvokingBean">
+        <property name="staticMethod" value="by.nc.school.dev.example.spring.beans.web.tag.AppStringTag.setAppStringsService" />
+        <property name="arguments">
+            <ref bean="appStringsService" />
+        </property>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.MethodInvokingBean">
+        <property name="staticMethod" value="by.nc.school.dev.example.spring.beans.web.controller.Controller.setCommandFactory" />
+        <property name="arguments">
+            <ref bean="commandFactory" />
+        </property>
+    </bean>
+
+    <bean class="org.springframework.beans.factory.config.MethodInvokingBean">
+        <property name="staticMethod" value="by.nc.school.dev.example.spring.beans.web.filter.ModelProvidersFilter.setModelProviderFactory" />
+        <property name="arguments">
+            <ref bean="modelProviderFactory" />
+        </property>
+    </bean>
+
+</beans>
