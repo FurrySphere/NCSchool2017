@@ -12,6 +12,7 @@
         <module>ServletAndJSP</module>
         <module>SpringBeans</module>
         <module>SpringMVC</module>
+        <module>SpringData</module>
     </modules>
 
 </project>
